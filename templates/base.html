@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="融鑫源（北京）文化科技有限公司">
+    <meta name="author" content="融鑫源">
+    <meta name="copyright" content="融鑫源">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=2032">
+    <title>{% block title %} ? {% endblock %} 首页</title>
+    <link rel="stylesheet" href="/static/css/common.css" />
+    <link rel="stylesheet" href="/static/css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="/static/css/uikit.min.css" />
+    <link rel="stylesheet" href="/static/css/uikit.gradient.min.css" />
+    <!--<script src="/static/js/jquery-3.1.1.min.js">-->
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+    <script src="/static/js/uikit.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+     {% block beforehead %}<!-- before head  -->{% endblock %}
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() >0 ){
+                    $(".navbar").addClass("nav-scroll");
+                }else{
+                    $(".navbar").removeClass("nav-scroll");
+                }
+            })
+        })
+        $(function(){
+          $(".gototop").hide();
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $(".gototop").fadeIn(300);
+                }
+                else
+                {
+                    $(".gototop").fadeOut(300);
+                }
+            });
+            $(".gototop").click(function(){
+            $('body,html').animate({scrollTop:0},500);
+            return false;
+            });
+
+        });
+        //导航
+        $(function(){
+            $(".nav li:first").css({"background":"none"});
+
+            var ww=$(window).width();
+            if(ww > 1200){
+                $(".nav li:eq(1)").mouseover(function(){
+                    $(this).find(".subNav").css({"display":"block"});
+                })
+                $(".nav li:eq(1)").mouseout(function(){
+                    $(this).find(".subNav").css({"display":"none"});
+                })
+                $(".nav li:eq(3)").mouseover(function(){
+                    $(this).find(".subNav").css({"display":"block"});
+                })
+                $(".nav li:eq(3)").mouseout(function(){
+                    $(this).find(".subNav").css({"display":"none"});
+                })
+            }else {
+                $(".nav li:eq(1)").find(".subNav").css({"display":"block"});
+                $(".nav li:eq(3)").find(".subNav").css({"display":"block"});
+                var hh=$(window).height();
+                $(".nav").css({"height":hh-105+"px"});
+            }
+        })
+        $(function(){
+            $navMenu=$('.ftnav .menu');
+            $(".ftnav h3").click(function(){
+            if($(this).parent().hasClass('current')){
+                $(this).parent().removeClass('current');
+                }else{
+                $(this).parent().addClass('current');
+                 $(this).parent().siblings().removeClass("current");
+                }
+            })
+		})
+    </script>
+</head>
+<body>
+    <div class="uk-width-medium-1-1 navbar">
+        <div class="container cf">
+            <div class="hright" style="height:106px;">
+                <ul class="nav">
+                    <li class="" style="background: none;">
+                        <a href="http://www.sanju.cn/Home/nav/112.html">首页</a>
+                        <div class="subNav">
+                                <a href="http://www.sanju.cn/Home/nav/164.html">公司简介</a>
+                        </div>
+                    </li>
+                    <li class="cr">
+                        <a href="http://www.sanju.cn/Home/nav/149.html">走进融鑫源</a>
+                        <div class="subNav">
+                            <a href="http://www.sanju.cn/Home/nav/149.html">公司概况</a>
+                            <a href="http://www.sanju.cn/Home/nav/148.html">下属企业</a>
+                            <a href="http://www.sanju.cn/Home/nav/177.html">企业文化</a>
+                            <a href="http://www.sanju.cn/Home/nav/146.html">管理团队</a>
+                            <a href="http://www.sanju.cn/Home/nav/176.html">组织架构</a>
+                            <a href="http://www.sanju.cn/Home/nav/175.html">董事长致辞</a>
+                            <a href="http://www.sanju.cn/Home/nav/147.html">荣誉资质</a>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="http://www.sanju.cn/Home/nav/118.html">新闻中心</a>
+                    </li>
+                    <li class="">
+                        <a href="http://www.sanju.cn/Home/nav/116.html">产品与服务</a>
+                        <div class="subNav">
+                            <a href="http://www.sanju.cn/Home/nav/128.html">环保新能源服务</a>
+                            <a href="http://www.sanju.cn/Home/nav/129.html">环保净化产品</a>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="http://www.sanju.cn/Home/nav/134.html">国际合作</a>
+                        <div class="subNav">
+                            <a href="http://www.sanju.cn/Home/nav/141.html">海外业务</a>
+                            <a href="http://www.sanju.cn/Home/nav/140.html">美国业务现场图片</a>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="http://www.sanju.cn/Home/nav/119.html">节能环保</a>
+                        <div class="subNav">
+                            <a href="http://www.sanju.cn/Home/nav/167.html">模块1</a>
+                            <a href="http://www.sanju.cn/Home/nav/168.html">文章</a>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="http://www.sanju.cn/Home/nav/156.html">关于我们</a>
+                    </li>
+                </ul>
+                <div class="nav-logo" id="left-menu"> <span></span> <span></span> <span></span> </div>
+                <div class="nav-close"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        {% block content%}
+
+        {% endblock %}
+    </div>
+
+    <div class="footer uk-width-medium-1-1">
+		<div class="w1200">
+            <div class="ftnav">
+                <div class="menu menu1">
+                    <h3>投资者关系</h3>
+                    <ul>
+                        <li><a href="/Home/nav/142.html">信息披露</a></li>
+                        <li><a href="http://irm.p5w.net/ssgs/S300072/" target="_blank">全景互动平台</a>
+                        </li>
+                        <li><a href="http://www.cninfo.com.cn/information/companyinfo_n.html?fulltext?szcn300072" target="_blank">巨潮资讯</a>
+                        </li>
+                    </ul>
+                </div><div class="menu ">
+                    <h3>联系我们</h3>
+                    <ul>
+                        <li><a href="/Home/nav/144.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="menu ">
+                    <h3>帮助中心</h3>
+                    <ul>
+                        <li><a href="http://mail.sanju.cn/" target="_blank">企业邮箱</a></li>
+                    </ul>
+                </div>
+            </div>
+
+			<div class="weixin">
+			    <dl><dt><img src="/static/img/index/weChatqrcode.jpg" width="99" height="97"></dt>
+                    <dd>微信公众号</dd>
+                </dl>
+            </div>
+            <div class="ft">
+                <p>Copyright 2017 北京融鑫源（北京）文化科技有限公司 All Rights Reserved. 备案号: 京ICP备 18009624号</p>
+            </div>
+        </div>
+    </div>
+    <div class="floatbox" style="display: block;"><a href="" class="gototop" style="display: block;"></a></div>
+</body>
+</html>

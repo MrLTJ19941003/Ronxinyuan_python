@@ -1,0 +1,279 @@
+{% extends 'base.html' %}
+
+{% block title %}首页{% endblock %}
+
+{% block beforehead %}
+<script src="/static/js/slider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.indexBanner ul').bxSlider({
+	    	auto:true,
+	    	controls: false,
+	    	pager:true,
+	    });
+	    $('#owl-demo').owlCarousel({
+        items: 3,
+        navigation : false,
+        pagination : true,
+	 });
+	});
+
+</script>
+
+{% endblock %}
+
+{% block content %}
+    <div style="background: #fbfbf9;">
+        <div class="indexBanner">
+            <div class="bx-wrapper" style="max-width: 100%;">
+                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 704px;">
+                    <ul class="slides" style="width: 615%; position: relative; transition-duration: 0.5s; transform: translate3d(-3840px, 0px, 0px);">
+                        <li style="float: left; list-style: none; position: relative; width: 1920px;">
+                            <a href="#"><img src="/static/img/index/5840e150c4590.jpg"></a>
+                        </li>
+                        <li style="float: left; list-style: none; position: relative; width: 1920px;">
+                            <a href="#"><img src="/static/img/index/5840e11f21052.jpg"></a>
+                        </li>
+                        <li style="float: left; list-style: none; position: relative; width: 1920px;">
+                            <a href="#"><img src="/static/img/index/5840e138abbc3.jpg"></a>
+                        </li>
+                        <li style="float: left; list-style: none; position: relative; width: 1920px;">
+                            <a href="#"><img src="/static/img/index/5840e14293256.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bx-controls bx-has-pager">
+                    <div class="bx-pager bx-default-pager">
+                        <div class="bx-pager-item">
+                        </div>
+                        <div class="bx-pager-item">
+                        </div>
+                        <div class="bx-pager-item">
+                        </div>
+                        <div class="bx-pager-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .aboutRxy{
+                width: 1080px;
+                margin: -90px auto 0;
+                background: #fff;
+                padding: 35px 60px;
+                position: relative;
+                z-index: 90;
+                overflow: hidden;
+            }
+            .aboutRxy dt{ float:left;width:467px;  overflow:hidden;}
+            .aboutRxy dt a:hover img{opacity: .8; transform: scale(1.1,1.1);}
+            .aboutRxy dd{width:500px; float:left;margin-left:65px;}
+            .aboutRxy dd h3{margin:20px 0;}
+            .aboutRxy dd h3 a{ font-size:30px; color:#6fa013;}
+            .aboutRxy dd p{ line-height:30px;}
+            .aboutRxy dd p a{ font-size:14px; color:#666;display:inline-block;}
+            img{
+                border: none;
+                max-width: 100%;
+                height: auto;
+                transition: all 0.5s ease 0s;
+            }
+        </style>
+        <div class="aboutRxy">
+            <dl>
+                <dt><a href="/Home/Index/index/nav/149.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="467" height="271"></a></dt>
+                <dd>
+                    <h3><a href="/Home/Index/index/nav/149.html">天蓝   水清   地沃   人善</a></h3>
+                    <p><a href="/Home/Index/index/nav/149.html"></a>
+                    </p>
+                    <p><a href="/Home/Index/index/nav/149.html">三聚环保，始终致力于天蓝、水清、地沃、人善的和谐环境建设。</a>
+                    </p>
+                    <p><a href="/Home/Index/index/nav/149.html">我们始终以技术创新、净化能源、服务环保、回馈社会为宗旨，通过独创的能源净化技术和先进的环保减排方案为中国乃至全球环保事业做贡献。我们的产品和服务包括六个领域：炼化行业、农业及生物质行业、煤化工行业、油气田、焦化行业、海外合作项目。</a>
+                    </p>
+                    <p><a href="/Home/Index/index/nav/149.html">
+                        <br></a>
+                    </p>
+                    <p></p>
+                </dd>
+            </dl>
+        </div>
+        <style>
+            .aboutProduct{
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 1.6%;
+                margin-top: 60px;
+                background: #fff;
+            }
+            .fastLink{
+                max-width: 1236px;
+                margin: 0 auto;
+            }
+            .aboutProduct h2{
+                font-size: 32px;
+                color: #000;
+                text-align: center;
+            }
+        </style>
+        <div class="aboutProduct">
+            <div class="fastLink">
+                <h2>集团产业</h2>
+                <div>
+                    <img>
+                </div>
+            </div>
+
+        </div>
+          <style>
+            .newsBox{
+                width: 1236px;
+                margin: 0 auto;
+                padding: 60px 0;
+            }
+            .newsBox h2{
+                font-size: 32px;
+                color: #000;
+                text-align: center;
+            }
+            .newsList {margin-top:50px;  }
+            .newsList dl{width:382px;padding-bottom:5px;margin:0 auto;}
+            .newsList dt{ position:relative;width:382px;height:206px; overflow:hidden;}
+            .newsList dt .time{width:66px;height:58px; background:#6fa013; position:absolute; top:20px;right:20px; color:#fff; font-family:Arial; text-align:center;padding-top:8px;}
+            .newsList dt .time span{ display:block; font-size:26px;}
+            .newsList dt a:hover img{opacity: .8; transform: scale(1.1,1.1);}
+            .newsList dd{ background:#fff;padding:40px; box-shadow:1px 1px 2px #e4e4e4; overflow:hidden;}
+
+            .newsList dd h3 a{ font-size:16px; color:#000; font-weight:bold;}
+            .newsList dd h3 a:hover{ color:#6fa013;}
+            .newsList dd p{ line-height:26px; text-align:left;margin-top:22px;  }
+            .newsList dd p a{ display:block;font-size:14px; color:#8e8e8e;line-height:1.5;display:block;height:7.5em;overflow:hidden;text-overflow:ellipsis;}
+            .newsList dd .more{width:22px;height:22px; float:right;margin-top:30px;}
+            .newsList dd .more a{display:block;width:22px;height:22px; background:url(/static/img/index/more1.png) no-repeat 0 0;}
+
+            /*滚动*/
+            .owl-carousel { display: none; position: relative; width: 100%; -ms-touch-action: pan-y; }
+            .owl-carousel .owl-wrapper { display: none; position: relative; -webkit-transform: translate3d(0px, 0px, 0px); }
+            .owl-carousel .owl-wrapper-outer { overflow: hidden; position: relative; width: 100%; z-index:1; }
+            .owl-carousel .owl-wrapper-outer.autoHeight { -webkit-transition: height 500ms ease-in-out; -moz-transition: height 500ms ease-in-out; -ms-transition: height 500ms ease-in-out; -o-transition: height 500ms ease-in-out; transition: height 500ms ease-in-out; }
+            .owl-carousel .owl-item { float: left; }
+            .owl-controls .owl-page, .owl-controls .owl-buttons div { cursor: pointer; }
+            .owl-controls { -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+            .grabbing { cursor: url(grabbing.png) 8 8, move; }
+            .owl-carousel .owl-wrapper, .owl-carousel .owl-item { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -ms-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); }
+            .owl-theme .owl-controls { margin: 30px 0 0; text-align: center; }
+           .owl-theme .owl-controls .owl-page { display: inline-block; zoom: 1;  *display: inline;/*IE7 life-saver */
+            }
+            .owl-theme .owl-controls .owl-page span { display: block; width: 12px; height: 12px; border-radius:12px; margin: 5px 7px; background: #848475; }
+            .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {  background: #98cd3c;  }
+            .owl-theme .owl-controls .owl-page span.owl-numbers { height: auto; width: auto; color: #FFF; padding: 2px 10px; font-size: 12px; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
+            .owl-carousel .owl-wrapper-outer{margin:0 auto;}
+            .banner .owl-theme .owl-controls{ position:absolute; right:3rem; top:50%; z-index:99;}
+        </style>
+         <div class="newsBox">
+            <h2>新闻中心</h2>
+             <div class="newsList owl-carousel owl-theme" id="owl-demo">
+                  <div class="owl-item" style="width: 412px;">
+                        <dl class="item">
+                            <dt><a href="/Home/nav/118/id/1040.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>17</span>2018.05</div></dt>
+                            <dd>
+                                <h3 class="ellipsis"><a href="/Home/nav/118/id/1040.html">中国经济社会理事会赴海国投旗下三聚环保公司调研混合所有制改革情况</a></h3>
+                                <p><a href="/Home/nav/118/id/1040.html">　　为深入了解国有企业混合所有制改革情况,总结经验、发现问题、研究对策,形成可复制可推广的制度性经验、不断优化改革方向。5月9日,中国经济社会理事调研组赴海国投旗下三聚环保公司开展调研。　　经过多年来的发展,海国投公司旗下混合所有制企业逐步形成了规范化的现代企业管理制度、市场化的激励约束机制、专业化的人才队伍,从而保障了公司技术、服务、管理模式的不断创新,进而支撑公司跨越式发展。　　三聚环保作为国企旗下混合所有制企业的实践者,在海淀区委区政府、区国资委的支持下,获得了广阔的发展空间。将国有企业的资本优势与非公有制企业市场化运作的优势有机结合,更利于三聚环保公司对市场需求的快速适应。　　在调研会</a></p>
+                                <div class="more"><a href="/Home/nav/118/id/1040.html"></a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="owl-item" style="width: 412px;">
+                        <dl class="item">
+                            <dt><a href="/Home/nav/118/id/1039.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>15</span>2018.05</div></dt>
+                            <dd>
+                                <h3 class="ellipsis"><a href="/Home/nav/118/id/1039.html">三聚环保与石科院战略合作，共推绿色清洁能源产业化技术</a></h3>
+                                <p><a href="/Home/nav/118/id/1039.html">　　三聚环保在生物质直接液化技术取得重大突破的基础上，与石科院签订战略合作协议，就后续油品配套技术开发、加工工艺及机理研究等课题开展深入研究。　　5月11日上午，中国石油化工股份有限公司石油化工科学研究院（以下简称“石科院”）与北京三聚环保新材料股份有限公司（以下简称“三聚环保”）在京举行了战略合作签约仪式，石科院院长达志坚和三聚环保总裁林科分别代表双方签署战略协议。双方将在技术开发、成果转化等方面开展广泛合作，共同推进洁净能源技术创新和产业化，引领行业绿色发展。　　三聚环保总裁林科表示，石科院是我国石油化工领域着名的研发机构，先后走出了多位中国科学院、中国工程院院士，百余项成果获得国家级奖励</a></p>
+                                <div class="more"><a href="/Home/nav/118/id/1039.html"></a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="owl-item" style="width: 412px;">
+                        <dl class="item">
+                            <dt><a href="/Home/nav/118/id/1038.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>21</span>2018.04</div></dt>
+                            <dd>
+                                <h3 class="ellipsis"><a href="/Home/nav/118/id/1038.html">沈阳市政协副主席于龙一行考察三聚环保在建秸秆项目</a></h3>
+                                <p><a href="/Home/nav/118/id/1038.html">　　4月20日沈阳市政协副主席于龙、市政协港澳台侨外办事委员会主任赵丹等一行到沈阳康禾秸秆生物质综合循环利用项目进行实地考察，指导项目的发展和建设。　　沈阳康禾秸秆综合循环利用项目建设地在美丽的沈阳市康平县。康平县地处辽河流域，有耕地120万亩，宜农宜林荒地和滩涂地30万亩，是国家绿色食品基地建设县、三北防护林建设重点县、国家级生态建设示范区、全国绿化模范县。　　此项目占地74亩，预计今年9月底完工，年处理农作物秸秆3万吨，生产炭肥5万吨，可以覆盖一百万亩土地，充分利用沈阳康平当地丰富的农作物秸秆资源，依托三聚环保高科技技术、高素质人才、高水平管理平台，炭化生产生物炭基肥料、土壤改良剂等高附加</a></p>
+                                <div class="more"><a href="/Home/nav/118/id/1038.html"></a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="owl-item" style="width: 412px;">
+                        <dl class="item">
+                            <dt><a href="/Home/nav/118/id/1037.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>23</span>2018.03</div></dt>
+                            <dd>
+                                <h3 class="ellipsis"><a href="/Home/nav/118/id/1037.html">林科总裁：MCT悬浮床平台技术推动炼化产业升级和绿色发展</a></h3>
+                                <p><a href="/Home/nav/118/id/1037.html">　　2018年3月22日&nbsp;上午，2018年（第二届）全国炼化工业重劣质原油深加工先进技术研讨会在南京隆重召开。三聚环保林科总裁应邀出席并作了题为《MCT超级悬浮床技术开发与工业应用》的报告。会议由中国石化金陵石化公司副总经理亚宏宇、中国工程院院士、中国石化原高级副总裁、总工程师曹湘洪分别致欢迎辞。会议首先由曹湘洪院士作了题为《我国车用燃料清洁化的现状、发展方向与对策》的主旨报告。曹院士指出，尽管电动汽车和燃料电池汽车已经实现了量产和销售，但由于受配套基础设施、性能和成本等制约因素的影响，到2040年，世界90%的运输燃料仍来自于石油，我国车用燃料中汽柴油占比约为89%。当前车用燃料清洁</a></p>
+                                <div class="more"><a href="/Home/nav/118/id/1037.html"></a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="owl-item" style="width: 412px;">
+                        <dl class="item">
+                            <dt><a href="/Home/nav/118/id/1036.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>24</span>2018.01</div></dt>
+                            <dd>
+                                <h3 class="ellipsis"><a href="/Home/nav/118/id/1036.html">不忘初心，再绘蓝图 推动新时代绿色发展 三聚环保年终总结会召开</a></h3>
+                                <p><a href="/Home/nav/118/id/1036.html">　　“不忘初心，再绘蓝图”，2018年1月23日，三聚环保2017年终总结会顺利召开。来自公司总部、分子公司代表近千名员工参加了本次会议。林科总裁对2017年三聚环保的工作进行了全面总结，刘雷董事长对2018年三聚环保工作蓝图做出了规划。林科总裁表示，2017年，公司以技术创新为驱动，通过项目建设，帮助石油炼化、煤化工领域优秀的民营企业实现升级和产业延伸，完成企业向资源利用率高、产品附加值高、节能环保、安全风险低的新型产业转型。凭借悬浮床加氢、焦化烟气治理、费托合成、低压氨合成等可靠的产品、工艺服务，继续做大业务规模，实现营收同比增长，保持公司在国内重质化石原料深度加工、民营焦化及化肥</a></p>
+                                <div class="more"><a href="/Home/nav/118/id/1036.html"></a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="owl-item" style="width: 412px;">
+                        <dl class="item">
+                            <dt><a href="/Home/nav/118/id/1035.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>18</span>2018.01</div></dt>
+                            <dd>
+                                <h3 class="ellipsis"><a href="/Home/nav/118/id/1035.html">荆门市市委书记：全力支持三聚环保煤油化融合及秸秆循环利用项目快速实施</a></h3>
+                                <p><a href="/Home/nav/118/id/1035.html">　　1月18日上午10:00，湖北省荆门市市委书记张爱国一行考察三聚环保。刘雷董事长向来访领导介绍了公司在环保新材料、绿色能源、秸秆综合利用与生态农业领域的创新技术和项目实施情况。他说，在荆门市委、市政府领导的关心支持下，公司在钟祥市金鹰能源科技有限公司承建的合成氨项目进展顺利。另外去年在钟祥市开展的炭基肥试验田喜获丰收，在此，我代表公司管理层对各级领导的关心和支持表示衷心感谢。我们将利用先进技术，实现传统石油化工煤化工的融合发展。2017年9月在钟祥市新建的炭基复合肥项目，预计今年能够建成投产，我们希望该项目与合成氨项目形成产业联动，充分利用当地优势资源，实现传统</a></p>
+                                <div class="more"><a href="/Home/nav/118/id/1035.html"></a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="owl-item" style="width: 412px;">
+                        <dl class="item">
+                        <dt><a href="/Home/nav/118/id/1034.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>11</span>2018.01</div></dt>
+                        <dd>
+                            <h3 class="ellipsis"><a href="/Home/nav/118/id/1034.html">2018农业质量年，三聚环保构筑绿色兴农、质量兴农新蓝海！</a></h3>
+                            <p><a href="/Home/nav/118/id/1034.html">　　2018年，农业部将在全国范围开展“农业质量年”活动，活动将大力促进增强质量安全意识，推进标准化生产，严格全程监管，提高农业发展质量、效益和竞争力。推进农业由增产导向转向提质导向，走质量兴农，是让农业未来更加有奔头的现实需要。农业部提出：“深入推进化肥农药使用量零增长行动，强化作物秸秆、畜禽粪污资源化利用，到2020年，化肥、农药利用率达到40%，养殖废弃物综合利用率达到75%。”三聚环保运用“秸秆农作物秸秆炭化还田-土壤改良技术”，致力于土壤改良和农产品品质提升，为推动我国农业全面构建绿色农业发展体系，实现现代绿色农业、生态农业“保驾护航”。本周，三聚环保与山西省</a></p>
+                            <div class="more"><a href="/Home/nav/118/id/1034.html"></a></div>
+                        </dd>
+                    </dl>
+                    </div>
+                    <div class="owl-item" style="width: 412px;">
+                        <dl class="item">
+                            <dt><a href="/Home/nav/118/id/1033.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>11</span>2018.01</div></dt>
+                            <dd>
+                                <h3 class="ellipsis"><a href="/Home/nav/118/id/1033.html">央行考察团组点赞三聚环保：绿色金融就是要支持这样的企业</a></h3>
+                                <p><a href="/Home/nav/118/id/1033.html">　　1月9日下午，中国人民银行办公厅主任、新闻发言人邵伏军及有关司、处领导，在中共北京市海淀区委书记于军、海淀区和中关村管委会领导的陪同下，参观考察了中关村国家自主创新示范区展示中心三聚环保展A区。刘雷董事长向邵伏军一行汇报了公司在环保新材料、绿色能源、秸秆综合利用与生态农业领域的创新技术和项目实施情况。刘雷董事长说，三聚环保是海淀区混合所有制企业，作为国家级高新技术企业，成立20年来，立足环保产业，已发展成为一家知名的环保新材料、绿色能源及生态农业技术提供商。近年来，三聚环保致力于实现绿色发展，与南京农业大学合作开发了具有国际领先水平的秸秆炭化还田—土壤改良技术，以现代化工业技术带动</a></p>
+                                <div class="more"><a href="/Home/nav/118/id/1033.html"></a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="owl-item" style="width: 412px;">
+                            <dl class="item">
+                                <dt><a href="/Home/nav/118/id/1032.html"><img src="/static/img/index/5840e9fc2e6bd.jpg" width="382" height="206"></a><div class="time"><span>12</span>2017.12</div></dt>
+                                <dd>
+                                    <h3 class="ellipsis"><a href="/Home/nav/118/id/1032.html">白山黑水龙江行——三聚环保与黑龙江省黑河市签署战略合作协议</a></h3>
+                                    <p><a href="/Home/nav/118/id/1032.html">　　　12月10日，三聚环保与黑龙江省黑河市人民政府项目洽谈会暨签约仪式在美丽的边境城市黑河市举行。三聚环保董事长刘雷和黑河市委书记秦恩亭出席洽谈会，此次会议为双方在秸秆生物质综合循环利用项目的深入开展奠定了坚实的基础。会后，三聚环保副总裁付兴国和黑河市副市长赵起超分别代表双方签约。洽谈会由黑河市委副书记姚志波主持。市委秘书长张崇义、市法制办党组书记宋琦、市农委、市工信局、市财政局、市发改委、市科技局、省农科院黑河分院、市农业技术推广站、逊克县、爱辉区、北安市、五大连池市、孙吴县、嫩江县的主要领导参加了会谈和签约仪式。与会期间，刘雷董事长首先介绍了三聚环保的基本情况，其次，结合</a></p>
+                                    <div class="more"><a href="/Home/nav/118/id/1032.html"></a></div>
+                                </dd>
+                            </dl>
+                    </div>
+
+            </div>
+             <div class="newsList owl-carousel owl-theme" id="scrollNews" style="opacity: 1; display: block;">
+			    <div class="owl-wrapper-outer">
+                <div class="owl-wrapper" style="width: 7416px; left: 0px; display: block;">
+
+                </div>
+            </div>
+         </div>
+        </div>
+    </div>
+
+
+{% endblock %}

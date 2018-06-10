@@ -1,0 +1,83 @@
+/*base html start */
+.navbar {
+height: 105px;
+box-shadow: 0 2px 10px rgba(0,0,0,.4);
+background: #fff;
+z-index: 100;
+transition: all 0.5s ease 0s;
+position: relative;
+}
+.nav-scroll{
+position: fixed;
+left: 0;
+top: 0;
+}
+.floatbox{
+width: 75px;
+position: fixed;
+right: 0px;
+bottom: 10%;
+z-index: 100;
+}
+.floatbox a{
+display: block;
+width: 72px;
+height: 72px;
+background: url(/static/img/index/gotop.png) no-repeat center center;
+}
+ul, li { list-style-type: none; margin: 0; padding: 0; }
+.nav li > a:hover,.nav li.cr > a{ color:#6fa013;}
+.nav li a{
+    color:#000000;
+    font-size:16px;
+}
+.nav li div a{
+    font-size:14px;color:#fff;
+}
+.subNav > a{ display:inline-block;text-align:center;font-size:14px;color:#fff;line-height:3;margin:0 20px;z-index:99999999;}
+.subNav{position:absolute;top:100%;left:0;width:100%;background:url(/static/img/index/news_bg.png) repeat;display:none;text-align:center;}
+.nav{
+    padding-top:40px;
+}
+.nav li {
+    float: left;
+    padding: 0 7px;
+    background: url(/static/img/index/line.gif) no-repeat left center;
+    height: 66px;
+    line-height: 66px;
+}
+.container {
+width: 1200px;
+margin: 0 auto;
+position: relative;
+height:106px;
+}
+.cf {
+zoom: 1;
+}
+.hright {
+max-width: 60%;
+float: right;
+}
+
+.footer{ background:#303030;padding:60px 0 40px; overflow:hidden;}
+.w1200{width:1200px;margin:0 auto;}
+.ftnav{ float:left;}
+.menu { float: left;height:116px;padding:0 50px; border-left:1px solid #484848; }
+.menu1{padding-left:0; border:none;}
+.menu h3 {  font-size: 14px; color: #fff; padding-bottom: 12px; }
+.menu ul { clear: both; padding-top: 10px; }
+.menu ul li { line-height: 24px; }
+.menu ul li a { font-size: 12px; color: #b3b3b3; }
+.menu ul li a:hover { color: #fff; }
+.weixin{ float:right;}
+.weixin dl{width:99px; float:right;margin-left:30px;}
+.weixin dd{ text-align:center; color:#fff;margin-top:10px;}
+.ft { clear:both;padding-top:50px; }
+.ft p { font-size: 13px; color: #7d7d7d; }
+/*base html end */
+
+.indexBanner{max-width:1920px;margin:0 auto;}
+.indexBanner .bx-wrapper .bx-pager{position:absolute;left:0;bottom:100px;}
+.indexBanner .bx-wrapper .bx-pager.bx-default-pager a{background:#fff;}
+.indexBanner .bx-wrapper .bx-pager.bx-default-pager a:hover,.indexBanner .bx-wrapper .bx-pager.bx-default-pager a.active{background:#6fa013;}
